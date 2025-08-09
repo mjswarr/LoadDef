@@ -1,7 +1,7 @@
 # *********************************************************************
 # FUNCTION TO READ IN THE GOT4.10 OCEAN TIDE MODELS
 # 
-# Copyright (c) 2014-2019: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
+# Copyright (c) 2014-2025: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
 #
 # This file is part of LoadDef.
 #
@@ -94,7 +94,7 @@ def main(filename):
     pha  = np.divide(pha,1.) 
  
     # Define Full Lon/Lat/Amp/Pha Arrays
-    grid_olon, grid_olat = sc.meshgrid(lon1dseq,lat1dseq)
+    grid_olon, grid_olat = np.meshgrid(lon1dseq,lat1dseq)
     olon = grid_olon.flatten()
     olat = grid_olat.flatten()
     amp2darr = np.reshape(amp,(latdim,londim))

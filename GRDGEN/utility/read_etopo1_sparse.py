@@ -65,7 +65,7 @@ def main(filename,show_figures=False):
         plt.show()
  
     # Reformat Elevation Points into 1D Vectors
-    grid_olon, grid_olat = sc.meshgrid(lon,lat)
+    grid_olon, grid_olat = np.meshgrid(lon,lat)
     olon = grid_olon.flatten()
     olat = grid_olat.flatten()
     lsmask  = lsmask.flatten()

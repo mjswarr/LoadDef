@@ -83,7 +83,7 @@ def main(filename,harmonic="M2"):
     pha2darr = pha.copy()
 
     # Reformat Load Points into 1D Vectors
-    #grid_olon, grid_olat = sc.meshgrid(lon,lat)
+    #grid_olon, grid_olat = np.meshgrid(lon,lat)
     #olon = grid_olon.flatten()
     #olat = grid_olat.flatten()
     olon = lon.flatten()
