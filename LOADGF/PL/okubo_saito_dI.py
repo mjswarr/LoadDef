@@ -2,7 +2,7 @@
 # FUNCTION TO COMPUTE THE PARTIAL DERIVATIVES OF LOVE NUMBERS
 # See: Okubo & Saito (1983); Martens et al. (2016, JGR-Solid Earth)
 # 
-# Copyright (c) 2014-2019: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
+# Copyright (c) 2014-2025: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
 #
 # This file is part of LoadDef.
 #
@@ -24,7 +24,7 @@
 # Import Python Modules
 from __future__ import print_function
 import numpy as np
-from scipy.integrate import simps
+from scipy.integrate import simpson
 import math
 import sys
 from LOADGF.PL import dLagrangian_solid
@@ -61,7 +61,7 @@ def main(n,sint,Y1,Y2,YP1,YP2,piG,a_norm,rho_norm,g_norm):
     for ii in range(0,len(sint)-1):
         myXrng = sint[ii:-1]
         myYrng = integrand[ii:-1]
-        rho_integral[ii] = simps(myYrng,myXrng)
+        rho_integral[ii] = simpson(myYrng,myXrng)
     rho_integral[-1] = 0.
 
     # :: Compute dI with Respect to dK, dmu, and drho

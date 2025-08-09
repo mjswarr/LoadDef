@@ -2,7 +2,7 @@
 # FUNCTION TO COMPUTE THE PARTIAL DERIVATIVES OF LOVE NUMBERS
 # See: Okubo & Saito (1983); Martens et al. (2016, JGR-Solid Earth)
 # 
-# Copyright (c) 2014-2019: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
+# Copyright (c) 2014-2025: HILARY R. MARTENS, LUIS RIVERA, MARK SIMONS         
 #
 # This file is part of LoadDef.
 #
@@ -34,7 +34,6 @@ import datetime
 from LOADGF.PL import ln_partials
 from LOADGF.LN import prepare_planet_model
 from scipy import interpolate
-from scipy.integrate import simps
  
 """
 Function to compute partial derivatives of Love numbers. 
