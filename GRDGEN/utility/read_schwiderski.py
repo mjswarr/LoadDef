@@ -121,7 +121,7 @@ def main(filename):
     pha  = np.divide(pha,1.) 
  
     # Define Full Lon/Lat/Amp/Pha Arrays
-    grid_olon, grid_olat = sc.meshgrid(lon1dseq,lat1dseq)
+    grid_olon, grid_olat = np.meshgrid(lon1dseq,lat1dseq)
     olon = grid_olon.flatten()
     olat = grid_olat.flatten()
     amp2darr = np.reshape(amp,(latdim,londim))
