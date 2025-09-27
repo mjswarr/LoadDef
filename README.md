@@ -46,7 +46,7 @@ git clone https://github.com/hrmartens/LoadDef.git
 
 Alternatively, the software can be downloaded as a zip file: 
 
-https://github.com/hrmartens/LoadDef/archive/master.zip.
+https://github.com/hrmartens/LoadDef/archive/refs/heads/main.zip
 
 (Older versions of the software can be found by following this link: https://github.com/hrmartens/LoadDef/releases.)
 
